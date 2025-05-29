@@ -1,0 +1,23 @@
+[user]
+	name = Marcus Ross
+	email = marcus.ross@zahlenhelfer.de
+	signingkey = 0221073293789F5A
+
+[core]
+	excludesfile=~/.gitignore
+
+[alias]
+	lol = log --oneline --decorate --color
+	grap = log --graph --oneline --decorate --color
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = /opt/homebrew/bin/gpg
+
+[init]
+	defaultBranch = main
+
+[includeIf "gitdir:~/workspace/hpa/"]
+	path = .gitconfig.hpa
