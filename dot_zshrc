@@ -108,6 +108,7 @@ alias tfd="tofu apply -destroy -auto-approve"
 alias k=kubectl
 alias tf=tofu
 alias clear-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias k8shome="export KUBECONFIG=~/.kube/homelab"
 
 # DO-Token
 export DIGITALOCEAN_TOKEN="$(op item get "Digital Ocean Terraform Token" --fields label=password --reveal)"
