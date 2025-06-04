@@ -106,7 +106,7 @@ source $ZSH/oh-my-zsh.sh
 alias tfa="tofu apply -auto-approve"
 alias tfd="tofu apply -destroy -auto-approve"
 alias k=kubectl
-alias tf=terraform
+alias tf=tofu
 alias clear-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 # DO-Token
