@@ -107,8 +107,11 @@ alias tfa="tofu apply -auto-approve"
 alias tfd="tofu apply -destroy -auto-approve"
 alias k=kubectl
 alias tf=tofu
-alias clear-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias k8shome="export KUBECONFIG=~/.kube/homelab"
+alias clear-dns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+alias google-dns="sudo networksetup -setdnsservers 'Wi-Fi' 8.8.8.8 1.1.1.1"
+alias default-dns="sudo networksetup -setdnsservers 'Wi-Fi' empty"
+
 
 # DO-Token
 export DIGITALOCEAN_TOKEN="$(op item get "Digital Ocean Terraform Token" --fields label=password --reveal)"
